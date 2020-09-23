@@ -49,3 +49,9 @@
     5. 变成绿色后, 可以进行提交至版本区域, 通过 git commit -m 'message' // 提交至版本区域;
     6. 再次查看git status, 发现已经没有任务可以操作的文件;
     7. 可以通过git log 查看提交日志;
+
+
+
+    git remote add origin https://github.com/lllijingsong/git.git
+git branch -M master
+git push -u origin master
