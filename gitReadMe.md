@@ -1,3 +1,5 @@
+# github: https://github.com/lllijingsong/git.git
+
 # git基本使用
  需要在github上创建账号, 需要在本机安装git软件, 并且配置于全局;
 
@@ -26,7 +28,10 @@
 
 ### git diff --cached
     作用: 查看比较暂存区和版本库的区别;
-    
+    简单说就是, 通过这个命令可以查看 暂存区的代码和版本库的代码区别并打印出来;
+
+### git diff master
+    作用: 查看工作区和版本库的差异;
 
 # git三个区域
     git 有三个区域, 分别控制各种情况;
