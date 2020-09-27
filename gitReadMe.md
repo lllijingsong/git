@@ -33,6 +33,17 @@
 ### git diff master
     作用: 查看工作区和版本库的差异;
 
+# git分支
+
+### git branch
+    查看当前git下的所有分支;
+
+### git branch testing
+    在当前的git上创建一条testing的分支;
+
+### git checkout testing
+    切换testing分支
+
 # git三个区域
     git 有三个区域, 分别控制各种情况;
 
