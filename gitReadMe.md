@@ -33,6 +33,11 @@
 ### git diff master
     作用: 查看工作区和版本库的差异;
 
+### git reset --hard a82c0d8
+    git reset --hard a82c0d8, 将代码回退至某个时段;
+    日志编码, 可以全部选择, 也可以只选择前7位;
+    // 可以使用 git reflog 看更多的日志;
+
 # git分支
 
 ### git branch
