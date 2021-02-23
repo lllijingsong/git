@@ -19,7 +19,38 @@
 
     git status // 必须有文件更新的情况下才有数据更新;
 
+# git三个区域
+    git 有三个区域, 分别控制各种情况;
+
+### 工作区(color: red)
+    1. 在修改该文件夹的内容后, 可以输入git status命令, 出现红色的颜色的文件名(用户刚刚修改的文件);
+    2. 现在的状态就是工作区;
+
+
+### 暂存区(color: green)
+    3. 出现红色文件名后可以通过, git add . 或者 git add 该文件名 进行提交至暂存区域
+    4. 提交完毕后, 再次查看git status 该文件的名称变成绿色;
+
+### 版本区
+    5. 变成绿色后, 可以进行提交至版本区域, 通过 git commit -m 'message' // 提交至版本区域;
+    6. 再次查看git status, 发现已经没有任务可以操作的文件;
+    7. 可以通过git log 查看提交日志;
+
 # git常用的命令
+### git clone http://xxxxx.git
+    从远处代码库克隆代码到本地
+### git status
+    查看当前代码的转态
+### git add .
+    把工作区所有的代码传到暂存区
+### git commit -a -m 'all code update' 
+    -a是代表add，把所有的change加到git index里然后再commit
+
+### git commit -m 'commit code'
+    提交代码到版本区
+
+### git pull
+    从服务器拉代码
 
 ### git diff
     作用: 查看当前工作区和暂存区代码的区别;
@@ -48,28 +79,3 @@
 
 ### git checkout testing
     切换testing分支
-
-# git三个区域
-    git 有三个区域, 分别控制各种情况;
-
-### 工作区(color: red)
-    1. 在修改该文件夹的内容后, 可以输入git status命令, 出现红色的颜色的文件名(用户刚刚修改的文件);
-    2. 现在的状态就是工作区;
-
-
-### 暂存区(color: green)
-    3. 出现红色文件名后可以通过, git add . 或者 git add 该文件名 进行提交至暂存区域
-    4. 提交完毕后, 再次查看git status 该文件的名称变成绿色;
-
-### 版本区
-    5. 变成绿色后, 可以进行提交至版本区域, 通过 git commit -m 'message' // 提交至版本区域;
-    6. 再次查看git status, 发现已经没有任务可以操作的文件;
-    7. 可以通过git log 查看提交日志;
-
-
-
-    git remote add origin https://github.com/lllijingsong/git.git
-    git branch -M master
-    git push -u origin master
-
-    master
