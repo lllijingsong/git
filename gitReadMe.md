@@ -49,6 +49,9 @@
 ### git commit -m 'commit code'
     提交代码到版本区
 
+### git push
+    把代码提交到服务器
+
 ### git pull
     从服务器拉代码
 
